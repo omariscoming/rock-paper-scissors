@@ -56,7 +56,7 @@ async function logScreenText() {
     await sleep(2000);
 
     const result = playRound(userChoose, computerChoose);
-    screen.innerHTML = `<p class="screen-text">${result}!</p>`;
+    screen.innerHTML = `<p class="screen-text">${result}!<br>lets play again</p></p>`;
 
     if (i >= 5) {
         const score =  `YOU(${humanScore}) VS COMPUTER(${computerScore})`
